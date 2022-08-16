@@ -16,7 +16,7 @@
   align-items: center;
 }
 .container {
-  width: 700px;
+  max-width: 700px;
 }
 .image__div {
   width: 350px;
@@ -65,7 +65,7 @@
   margin-left: 10px;
   text-decoration: line-through;
   color: hsl(228, 12%, 48%);
-  font-size: 20px;
+  font-size: 15px;
 }
 .btn {
   display: flex;
@@ -88,7 +88,7 @@
 /* media-queries */
 @media screen and (max-width: 767px) {
 	.product__section{
-		padding-left: 115px;
+		padding-left: 60px;
 	}
   .desktop-img {
     display: none;
