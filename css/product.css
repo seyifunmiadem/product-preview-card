@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.product__section {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 700px;
+}
+.image__div {
+  width: 350px;
+  height: auto;
+}
+.image__div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+}
+.product__div {
+  width: 350px;
+  height: auto;
+  background: #fff;
+  border-radius: 0px 20px 20px 0px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.product__type {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+.product__name {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  line-height: 40px;
+  color: hsl(212, 21%, 14%);
+}
+.product__description {
+  color: hsl(228, 12%, 48%);
+  line-height: 22px;
+}
+.product__price {
+  display: flex;
+  align-items: center;
+}
+.new__price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 37px;
+}
+.old__price {
+  margin-left: 10px;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #fff;
+  background-color: hsl(158, 37%, 16%);
+}
+.bi {
+  margin-right: 10px;
+}
+/* media-queries */
+@media screen and (max-width: 767px) {
+
+  .desktop-img {
+    display: none;
+  }
+  .image__div img {
+    border-radius: 20px 20px 0 0px;
+  }
+  .product__div {
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+  }
+  .product__name {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width:768px){
+	.mobile-img{
+		display: none;
+	}
+}
